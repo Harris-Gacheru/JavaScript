@@ -16,7 +16,7 @@ class FourthYearStudent {
     }
 }
 
-let student1 = new FourthYearStudent('Harrison', 18, ['web development', 'data structures', 'OOP']);
+// let student1 = new FourthYearStudent('Harrison', 18, ['web development', 'data structures', 'OOP']);
 
 
-console.log(`Year of study: ${FourthYearStudent.getYearOfStudy()}\nAge: ${student1.getStudentAge()}`);
+// console.log(`Year of study: ${FourthYearStudent.getYearOfStudy()}\nAge: ${student1.getStudentAge()}`);
