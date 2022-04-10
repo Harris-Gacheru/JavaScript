@@ -16,7 +16,11 @@ class FourthYearStudent {
     }
 }
 
-// let student1 = new FourthYearStudent('Harrison', 18, ['web development', 'data structures', 'OOP']);
+// create instance
+let student1 = new FourthYearStudent('Martin Lurther', 23, ['web development', 'data structures', 'OOP']);
 
+// Log properties
+console.log(`Name: ${student1.name}\nAge: ${student1.age}\nUnits: ${student1.units}\n`);
 
-// console.log(`Year of study: ${FourthYearStudent.getYearOfStudy()}\nAge: ${student1.getStudentAge()}`);
+// Log getStudentAge method
+console.log(student1.getStudentAge());
