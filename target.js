@@ -11,10 +11,10 @@ const sum_target = (nums, target) => {
 
         for (let j = i + 1; j < nums.length; j++) {      
             if ((nums[i] + nums[j]) === target) {
-                    index1 = b4Sort.indexOf(nums[i]);
-                    index2 = b4Sort.indexOf(nums[j]);
-                    
-                    indices.push([index1, index2]);                    
+                index1 = b4Sort.indexOf(nums[i]);
+                index2 = b4Sort.indexOf(nums[j]);
+                
+                indices.push([index1, index2]);                    
             }              
         }      
     }
