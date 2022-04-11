@@ -20,7 +20,10 @@ class FourthYearStudent {
 let student1 = new FourthYearStudent('Martin Lurther', 23, ['web development', 'data structures', 'OOP']);
 
 // Log properties
-console.log(`Name: ${student1.name}\nAge: ${student1.age}\nUnits: ${student1.units}\n`);
+console.log(`Name: ${student1.name}
+Age: ${student1.age}
+Units: ${student1.units}`);
 
 // Log getStudentAge method
-console.log(student1.getStudentAge());
+console.log(`Student Age: ${student1.getStudentAge()}
+Year of study: ${FourthYearStudent.getYearOfStudy()}`);
