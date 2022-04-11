@@ -7,26 +7,18 @@ const sum_target = (nums, target) => {
     let indices = [];
     
     for (let i = 0; i < nums.length; i++) {
-        if (nums[i] > target) return;
+        if (nums[i] > target) return indices;
 
-        for (let j = 0; j < nums.length; j++) {
-            if (i != j) {   // avoid repeating the same index       
-                if ((nums[i] + nums[j]) === target) {
-                    if (nums[i] === nums[j]) {  // if operands have the same value
-                        index1 = b4Sort.indexOf(nums[i]);
-                        index2 = b4Sort.lastIndexOf(nums[j]);
-                        indices.push([index1, index2]);
-                    } else {
-                        index1 = b4Sort.indexOf(nums[i]);
-                        index2 = b4Sort.indexOf(nums[j]);
-                        indices.push([index1, index2]);
-                    }
-                }  
-            }
+        for (let j = i + 1; j < nums.length; j++) {      
+            if ((nums[i] + nums[j]) === target) {
+                    index1 = b4Sort.indexOf(nums[i]);
+                    index2 = b4Sort.indexOf(nums[j]);
+                    
+                    indices.push([index1, index2]);                    
+            }              
         }      
-        // console.log(indices); 
     }
     return indices;
 };
 
-// sum_target([3,1,2,2,4,5,8,11], 4);
+console.log(sum_target([0,3,4,5,1,2,6,7], 4));
