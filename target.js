@@ -21,4 +21,4 @@ const sum_target = (nums, target) => {
     return indices;
 };
 
-console.log(sum_target([0,3,4,5,1,2,6,7], 4));
+console.log(sum_target([0,3,4,5,1,2,2,6,7], 4));
